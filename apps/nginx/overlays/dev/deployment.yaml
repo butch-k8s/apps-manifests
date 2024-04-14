@@ -7,7 +7,7 @@ spec:
   template:
     spec:
       containers:
-      - name: dev-nginx
+      - name: nginx
         image: nginx
         env:
           - name: "TZ"
