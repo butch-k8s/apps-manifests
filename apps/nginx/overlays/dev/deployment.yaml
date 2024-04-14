@@ -10,5 +10,5 @@ spec:
       - name: dev-nginx
         image: nginx
         env:
-        - name: "TZ"
-          value: "Asia/Singapore"
+          - name: "TZ"
+            value: "Asia/Singapore"
