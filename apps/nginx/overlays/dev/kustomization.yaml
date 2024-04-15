@@ -21,6 +21,10 @@ configMapGenerator:
   - name: proxy-conf
     files:
       - proxy/nginx.conf
+  - name: nginx-api-conf
+    files:
+      - api-conf/cxs_auth.conf
+      - api-conf/cxs.conf    
 
 generatorOptions:
   disableNameSuffixHash: true
