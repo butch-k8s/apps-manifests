@@ -12,3 +12,8 @@ spec:
         env:
           - name: "TZ"
             value: "Asia/Singapore"
+          - name: TOKEN
+            valueFrom:
+              secretKeyRef:
+                name: secret-to-be-created
+                # key: username
