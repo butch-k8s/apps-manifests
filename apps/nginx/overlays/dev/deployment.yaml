@@ -26,6 +26,8 @@ spec:
               subPath: nginx.conf
             - name: dev-nginx-api-conf
               mountPath: /etc/nginx/conf.d/cons_conf.d
+            - name: dev-nginx-path-conf
+              mountPath: /etc/nginx/conf.d/path_conf.d
       volumes:
         - name: dev-nginx-conf
           configMap:
@@ -42,3 +44,6 @@ spec:
         - name: dev-nginx-api-conf
           configMap:
             name: dev-nginx-api-conf
+        - name: dev-nginx-path-conf
+          configMap:
+            name: dev-nginx-path-conf    
