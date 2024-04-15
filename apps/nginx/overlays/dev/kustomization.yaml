@@ -20,7 +20,7 @@ configMapGenerator:
       - nginx/nginx.conf
   - name: proxy-conf
     files:
-      - proxy/app.conf
+      - proxy/nginx.conf
 
 generatorOptions:
   disableNameSuffixHash: true

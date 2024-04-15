@@ -21,9 +21,9 @@ spec:
             - name: dev-nginx-conf
               mountPath: /etc/nginx/nginx.conf
               subPath: nginx.conf
-            # - name: dev-proxy-conf
-            #   mounthPath: /etc/nginx/conf.d/default.conf
-            #   subPath: app.conf
+            - name: dev-proxy-conf
+              mounthPath: /etc/nginx/conf.d/default.conf
+              subPath: nginx.conf
       volumes:
         - name: dev-nginx-confƒ
           configMap:
@@ -35,5 +35,5 @@ spec:
           configMap:
             name: dev-proxy-conf
             items:
-              - key: app.conf
-                path: app.conf
+              - key: nginx.conf
+                path: nginx.conf
