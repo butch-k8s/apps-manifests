@@ -18,6 +18,6 @@ spec:
                 name: secret-to-be-created
                 key: token
         volumeMounts:
-          - name: nginx-conf
+          - name: '{{.namePrefix}}-nginx-conf'
             mountPath: /etc/nginx/nginx.conf
             subPath: nginx.conf
