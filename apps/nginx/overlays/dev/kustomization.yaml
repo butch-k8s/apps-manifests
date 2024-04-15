@@ -15,9 +15,12 @@ patches:
 
 
 configMapGenerator:
-  - files:
+  - name: nginx-conf
+    files:
       - nginx/nginx.conf
-    name: nginx-conf
+  - name: proxy-conf
+    files:
+      - proxy/app.conf  
 
 generatorOptions:
   disableNameSuffixHash: true
