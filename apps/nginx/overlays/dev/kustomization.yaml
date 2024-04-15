@@ -12,3 +12,9 @@ patches:
   - path: deployment.yaml
     target: 
       kind: Deployment
+
+
+configMapGenerator:
+  - name: nginx-conf
+    files:
+      - nginx/nginx.conf
