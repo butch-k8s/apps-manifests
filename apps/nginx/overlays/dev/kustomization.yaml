@@ -6,6 +6,7 @@ namePrefix: dev-
 resources:
   - ../../base
   - secret-store.yaml
+  - secrets.yaml
 
 patches:
   - path: deployment.yaml
