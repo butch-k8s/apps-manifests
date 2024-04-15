@@ -7,17 +7,24 @@ spec:
   template:
     spec:
       containers:
-      - name: nginx
-        image: nginx
-        env:
-          - name: "TZ"
-            value: "Asia/Singapore"
-          - name: TOKEN
-            valueFrom:
-              secretKeyRef:
-                name: secret-to-be-created
-                key: token
-        volumeMounts:
-          - name: dev-nginx-conf
-            mountPath: /etc/nginx/nginx.conf
-            # subPath: nginx.conf
+        - name: nginx
+          image: nginx
+          env:
+            - name: "TZ"
+              value: "Asia/Singapore"
+            - name: TOKEN
+              valueFrom:
+                secretKeyRef:
+                  name: secret-to-be-created
+                  key: token
+          volumeMounts:
+            - name: dev-nginx-conf
+              mountPath: /etc/nginx/nginx.conf
+              # subPath: nginx.conf
+      volumes:
+        - name: dev-nginx-conf
+          configMap:
+            name: dev-nginx-conf
+            items:
+              - key: nginx.conf
+                path: nginx.conf
