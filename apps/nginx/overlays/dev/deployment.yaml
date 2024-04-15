@@ -16,7 +16,7 @@ spec:
               valueFrom:
                 secretKeyRef:
                   name: secret-to-be-created
-                  key: token
+                  key: TOKEN
           volumeMounts:
             - name: dev-nginx-conf
               mountPath: /etc/nginx/nginx.conf
