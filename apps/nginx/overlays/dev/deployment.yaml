@@ -16,4 +16,4 @@ spec:
             valueFrom:
               secretKeyRef:
                 name: secret-to-be-created
-                # key: username
+                key: token
