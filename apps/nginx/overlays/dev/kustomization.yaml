@@ -15,6 +15,6 @@ patches:
 
 
 configMapGenerator:
-  - name: nginx-conf
-    files:
+  - files:
       - nginx/nginx.conf
+    name: nginx-conf
