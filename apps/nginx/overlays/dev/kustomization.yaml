@@ -29,6 +29,7 @@ configMapGenerator:
   - name: nginx-path-conf
     files:
       - api-path/generate-uuid.conf
+      - api-path/argocd.conf
 
 generatorOptions:
   disableNameSuffixHash: true
