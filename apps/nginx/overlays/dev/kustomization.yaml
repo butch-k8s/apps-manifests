@@ -27,7 +27,7 @@ configMapGenerator:
       - api-conf/cxs.conf    
   - name: nginx-path-conf
     files:
-      - api-path/google.conf
+      - api-path/generate-uuid.conf
 
 generatorOptions:
   disableNameSuffixHash: true
