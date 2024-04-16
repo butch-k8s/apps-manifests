@@ -17,3 +17,13 @@ spec:
       name: dev-nginx-svc
       port:
         number: 80
+  rules:
+    - http:
+        paths:
+        - backend:
+            service:
+              name: dev-nginx-svc
+              port:
+                number: 80
+          path: /
+          pathType: Prefix
