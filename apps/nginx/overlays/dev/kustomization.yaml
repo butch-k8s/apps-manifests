@@ -7,7 +7,7 @@ resources:
   - ../../base
   # - secret-store.yaml
   # - secrets.yaml
-  - ingress.yaml
+  # - ingress.yaml
 
 patches:
   - path: deployment.yaml
