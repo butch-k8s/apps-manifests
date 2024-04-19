@@ -2,6 +2,10 @@ apiVersion: v1
 kind: Service
 metadata:
   name: nginx-svc
+  annotations:
+    service.beta.kubernetes.io/aws-load-balancer-additional-resource-tags: Cost Center=ISGM1-G1,Cloud
+      Environment=AWS,Data Classification=CONFIDENTIAL-PERSONAL,Deployment=SB:PREP,Platform
+      Name=Sandbox,Project=CapBuild,WBS Code=NA
 spec:
   type: LoadBalancer
   ports:
