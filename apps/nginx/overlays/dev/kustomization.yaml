@@ -30,6 +30,7 @@ configMapGenerator:
     files:
       - api-path/generate-uuid.conf
       - api-path/argocd.conf
+      - api-path/mdk.conf
 
 generatorOptions:
   disableNameSuffixHash: true
