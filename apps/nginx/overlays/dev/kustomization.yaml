@@ -5,8 +5,8 @@ namePrefix: dev-
 
 resources:
   - ../../base
-  - secret-store.yaml
-  - secrets.yaml
+  # - secret-store.yaml
+  # - secrets.yaml
   - ingress.yaml
 
 patches:
