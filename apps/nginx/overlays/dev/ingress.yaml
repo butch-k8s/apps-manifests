@@ -8,6 +8,18 @@ metadata:
     alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}]'
     alb.ingress.kubernetes.io/load-balancer-name: ingress
     alb.ingress.kubernetes.io/target-type: ip
+    alb.ingress.kubernetes.io/tags: |
+        Cost Center=ISGM1-G1,
+        Cloud Environment=AWS,
+        Data Classification=CONFIDENTIAL-PERSONAL,
+        Deployment=SB:PREP,
+        Platform Name=Sandbox,
+        Project=CapBuild,
+        WBS Code=NA,
+        EC2-Backup-Daily=FALSE,
+        EC2-Backup-Weekly=FALSE,
+        EC2-Backup-Monthly=FALSE
+        
   labels:
     app: nginx-ingress
     env: dev
