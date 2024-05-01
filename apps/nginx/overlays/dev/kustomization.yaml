@@ -7,12 +7,15 @@ resources:
   - ../../base
   # - secret-store.yaml
   # - secrets.yaml
-  # - ingress.yaml
+  - ingress.yaml
 
 patches:
   - path: deployment.yaml
     target: 
       kind: Deployment
+  # - path: ingress.yaml
+  #   target: 
+  #     kind: Deployment    
 
 
 configMapGenerator:
